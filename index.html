@@ -6,238 +6,238 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-  <!-- Put your site title here -->
-  <title>
-    Karan Raturi | A Business Analytics student based in US.
-  </title>
+  <!-- Google Fonts: Outfit (Headings) and Inter (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700&display=swap"
+    rel="stylesheet">
 
-  <meta name="description" content="Data Analyst | Business Analyst | Data Science Enthusiast.">
-  <meta name="keywords" content="Karan Raturi, Python, SQL, R, Machine Learning, Artificial Intelligence" />
+  <title>Karan Raturi | Data Analyst & Business Intelligence</title>
+
+  <meta name="description"
+    content="Portfolio of Karan Raturi - Data Analyst, Business Analyst, and Data Science Enthusiast.">
   <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
 
   <!-- ***** Header ***** -->
+  <header class="header" id="top">
+    <nav class="nav container">
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Karan Raturi</span>
+      <button class="nav__burger" aria-label="Toggle Menu">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </button>
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero container">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Uncovering Insights <br /> from Data
         </h1>
-        <p>Data Analyst | Business Analyst | Data Scientist Enthusiast</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <p class="hero__subtitle">Hi, I'm <strong>Karan Raturi</strong>. I transform raw data into actionable business
+          strategies through Analytics and AI.</p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View Work</a>
+          <a href="#contact" class="btn btn--outline">Contact Me</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <main role="main">
+  <main>
 
-    <!-- ***** Work ***** -->
+    <!-- ***** Projects ***** -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <h2 class="section__title">Selected Projects</h2>
 
-    <section class="work" id="work">
-      <div class="row">
-        <h2>Projects</h2>
-        <div class="work__boxes">
+        <div class="projects__grid">
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3> Analysing Sales of Conagra and How to Boost Them</h3>
-              <p>
-                Conducted a data-driven analysis of sales drivers for Conagra Brands’ Gardein line, examining merchandising, pricing, and product attributes to optimize market presence and sales performance in the competitive plant-based food industry.
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-card__image-wrapper">
+              <img src="./images/project1.png" alt="Conagra Sales Analysis" class="project-card__image"
+                loading="lazy" />
+            </div>
+            <div class="project-card__content">
+              <h3 class="project-card__title">Conagra Sales Boost Analysis</h3>
+              <p class="project-card__description">
+                Data-driven analysis of sales drivers for Conagra Brands’ Gardein line. Examined merchandising, pricing,
+                and product attributes to optimize market presence.
               </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Excel</li>
-                <li>Applied Machine Learning </li>
-                <li>EDA (Exploratory Data Analysis) </li>
-              </ul>
-              
-              <div class="work__links">
-                <a href="#" class="link__text" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+              <div class="project-card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Excel</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="icon-link" aria-label="View Source Code">
+                  <img src="./images/github.svg" alt="GitHub">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project1.png" class="work__image" alt="Project 1" />
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-card__image-wrapper">
+              <img src="./images/project2.png" alt="Google Merchandise Analytics" class="project-card__image"
+                loading="lazy" />
             </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Analysis of KPI's of Google Merchandise Store </h3>
-              <p>
-                Analyzed Google Merchandise Store (GMS) dataset in Google Analytics to evaluate website performance, user behavior, and e-commerce KPIs, driving insights on traffic trends, engagement, and sales efficiency.
+            <div class="project-card__content">
+              <h3 class="project-card__title">Google Store KPI Analysis</h3>
+              <p class="project-card__description">
+                Evaluated website performance and e-commerce KPIs for the Google Merchandise Store, driving insights on
+                traffic trends and sales efficiency.
               </p>
-              <ul class="work__list">
-                <li>Google Analytics</li>
-                <li>Microsoft Powerpoint</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/RaturiKaran/google-merchandise-store-insights" class="link__text" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+              <div class="project-card__tags">
+                <span class="tag">Google Analytics</span>
+                <span class="tag">Data Viz</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/RaturiKaran/google-merchandise-store-insights" class="icon-link"
+                  aria-label="View Source Code" target="_blank">
+                  <img src="./images/github.svg" alt="GitHub">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project2.png" class="work__image" alt="Project 1" />
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-card__image-wrapper">
+              <img src="./images/project3.png" alt="Credit Card Prediction" class="project-card__image"
+                loading="lazy" />
             </div>
-          </div>
-
-
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Credit Card Approval Prediction</h3>
-              <p>
-                A python program which determines whether a person would be approved for a credit line by given predictors.
+            <div class="project-card__content">
+              <h3 class="project-card__title">Credit Card Approval Prediction</h3>
+              <p class="project-card__description">
+                A robust predictive model to determine credit line approval probability based on applicant financial
+                history and demographics.
               </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Scikit-learn</li>
-                <li>Numpy</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+              <div class="project-card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag">NumPy</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#" class="icon-link" aria-label="View Source Code">
+                  <img src="./images/github.svg" alt="GitHub">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project3.png" class="work__image" alt="Project 1" />
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-card__image-wrapper">
+              <img src="./images/project4.png" alt="Car Price Prediction" class="project-card__image" loading="lazy" />
             </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Car Sales Price Prediction</h3>
-              <p>
-                Developed a machine learning model to estimate consumer spending based on financial and demographic factors. 
-                Utilized Artificial Neural Network, feature engineering, and data preprocessing to analyze spending patterns, 
-                optimize predictive accuracy and data-driven insights into consumer behavior.
+            <div class="project-card__content">
+              <h3 class="project-card__title">Car Sales Price Prediction</h3>
+              <p class="project-card__description">
+                Deep learning model using ANNs to estimate consumer spending. Features advanced preprocessing and
+                feature engineering for high accuracy.
               </p>
-              <ul class="work__list">
-                <li>Python</li>
-                <li>Scikit-learn</li>
-                <li>TensorFlow</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/RaturiKaran/car-sales-price-prediction?tab=readme-ov-file" class="link__text" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+              <div class="project-card__tags">
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Python</span>
+                <span class="tag">ANN</span>
+              </div>
+              <div class="project-card__links">
+                <a href="https://github.com/RaturiKaran/car-sales-price-prediction?tab=readme-ov-file" class="icon-link"
+                  aria-label="View Source Code" target="_blank">
+                  <img src="./images/github.svg" alt="GitHub">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project4.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
+          </article>
 
         </div>
       </div>
     </section>
 
-    <!-- ***** About *****-->
+    <!-- ***** About ***** -->
+    <section class="section about" id="about">
+      <div class="container about__container">
+        <div class="about__text">
+          <h2 class="section__title">About Me</h2>
+          <p>
+            Hello! I'm Karan. I recently completed my <strong>MS in Business Analytics and AI</strong> from the
+            University of Texas at Dallas.
+            I am passionate about bridging the gap between raw data and strategic business decisions.
+          </p>
+          <p>
+            I am currently seeking opportunities where I can apply my skills in data science, machine learning, and
+            analytics to solve real-world problems.
+          </p>
 
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>
-              Hello there! I'm Karan Raturi. I have recently completed my Master's of Science in Business Analytics and AI from University of Texas at Dallas.
-              I am currently looking for internships / full time opportunites in data. I am an eager learner and constantly honing my skills.
-              My current skillset inlcudes the following tool and technology:
-            </p>
-
-
-              <div class="about" id="about">
-                  <ul>
-                      <li><span>Programming Languages/Frameworks:</span><br>Python, HTML, C++</li>
-                      <li><span>Technologies/Operating Systems:</span><br> AWS, Azure, SQL, NoSQL</li>
-                      <li><span>Machine Learning/Data Analytics:</span><br> Numpy, Pandas, Scikit-learn, Matplotlib, TensorFlow</li>
-                      <li><span>Software Tools:</span><br> Power BI, Git, VS Code, MSOffice, Google Suite,</li>
-                  </ul>
-              </div>
-    
-              <div class="about" id="about">
-                <ul>
-                    <li><span>May 2025</span><br>Master of Science in Business Analytics and Artificial Intelligence</li>
-                    <li><span>Dec 2021</span><br>Bachelor of Business Andministration</li>
-                </ul>
-                <br>
+          <div class="about__skills">
+            <div class="skill-group">
+              <h4>Languages</h4>
+              <p>Python, SQL, HTML, C++</p>
             </div>
-            <a href="./Karan Raturi Resume.pdf" class="btn">My Resume</a>
+            <div class="skill-group">
+              <h4>Tech & Cloud</h4>
+              <p>AWS, Azure, NoSQL, Git</p>
+            </div>
+            <div class="skill-group">
+              <h4>Analytics & ML</h4>
+              <p>Pandas, Scikit-learn, TensorFlow, Power BI</p>
+            </div>
           </div>
 
-          <div class="about__photo-container">
-            <img class="about__photo" src="./images/Karan.png" alt="" />
+          <a href="./Karan Raturi Resume.pdf" class="btn btn--outline" target="_blank">Download Resume</a>
+        </div>
+
+        <div class="about__image">
+          <div class="image-frame">
+            <img src="./images/Karan.png" alt="Karan Raturi" />
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ***** Contact ***** -->
+    <section class="section contact" id="contact">
+      <div class="container contact__container">
+        <h2 class="section__title">Let's Connect</h2>
+        <p class="contact__text">
+          Looking for a data professional who can hit the ground running? I'm always open to discussing new
+          opportunities, collaborations, or just chatting about data.
+        </p>
+        <a href="mailto:karanraturi26@gmail.com" class="btn btn--primary">karanraturi26@gmail.com</a>
+      </div>
+    </section>
+
   </main>
 
- 
-
-
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Hire me!</h2>
-      <div class="contact__info">
-        <p>
-          Let’s connect! If you’re looking for a data-driven 
-          professional passionate about uncovering insights 
-          and optimizing business strategies, 
-          feel free to reach out. I’d love to discuss how 
-          my skills can contribute to your team’s success.
-        </p>
-      
-        <a href="mailto:karanraturi26@gmail.com" class="btn">karanraturi26@gmail.com</a>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__socials">
+        <a href="https://github.com/RaturiKaran" target="_blank" aria-label="GitHub">
+          <img src="./images/github.svg" alt="" />
+        </a>
+        <a href="https://www.linkedin.com/in/karanraturi26/" target="_blank" aria-label="LinkedIn">
+          <img src="./images/linkedin.svg" alt="" />
+        </a>
       </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://github.com/RaturiKaran" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li> 
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/karanraturi26/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
+      <p class="footer__copy">&copy; 2024 Karan Raturi. Built with purpose.</p>
     </div>
   </footer>
 
+
   <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
   </a>
   <script src="./index.js"></script>
 </body>
